@@ -8,13 +8,14 @@ body {
   display: flex;
   position: relative;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
   position: relative;
   min-width: 340px;
   min-height: 400px;
-  margin: 0 1rem;
+  margin: 1rem;
   padding: 1rem;
   border-radius: 20px;
   overflow: hidden;
