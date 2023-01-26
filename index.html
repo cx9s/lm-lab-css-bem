@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>BEM Notation & OOCSS: Writing scaleable CSS</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>BEM Wars</h1>
     <div class="container">
-        <div>
-            <h2>The Dark Side</h2>
-            <img src="./images/vader.jpeg">
-            <p>Nesting!</p>
-            <p>Conflict!</p>
-            <p>Specificity Wars!</p>
-            <p>Cookies</p>
+      <div class="card card--dark">
+        <div class="card__imgBox">
+          <img class="card__img" src="./images/vader.jpeg" />
         </div>
+        <div class="card__content card__content--dark">
+          <h2 class="card__title">The Dark Side</h2>
+          <p class="card__p">Nesting!</p>
+          <p class="card__p">Conflict!</p>
+          <p class="card__p">Specificity Wars!</p>
+          <p class="card__p">Cookies</p>
+        </div>
+      </div>
 
-        <div>
-            <h2>The Force</h2>
-            <img src="./images/yoda.jpeg">
-            <p>Love</p>
-            <p>Beauty</p>
-            <p>CSS that Scales!</p>
-            <p>Great warrior. Wars not make one great!</p>
+      <div class="card card--light">
+        <div class="card__imgBox">
+          <img class="card__img" src="./images/yoda.jpeg" />
         </div>
+        <div class="card__content card__content--light">
+          <h2 class="card__title">The Force</h2>
+          <p class="card__p">Love</p>
+          <p class="card__p">Beauty</p>
+          <p class="card__p">CSS that Scales!</p>
+          <p class="card__p">Great warrior. Wars not make one great!</p>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
